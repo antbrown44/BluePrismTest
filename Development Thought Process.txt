@@ -1,0 +1,52 @@
+Author: Anthony J Brown (ajbrown44@hotmail.com)
+Subject: My thought process for technical test console application for BluePrism.
+********************************************************************************************************************************
+
+My approach to this problem is to keep things simple and as maintainable as possible given the current requirement and information I have.
+
+I generally translate requirements like these into a story/board with subsequent tasks, including drawing out a diagram to detail the flow of data 
+and logic through the application, and any other possible outcomes.
+
+"Story"
+As a developer, given 2 four letters words as input I want to search a specified dictionary file for the given words and write the result
+of any intermediate words in alphabetical order back out to a text file.
+
+"Initial Tasks"
+1. write tests to set assertions for ordinal value of two words - identify intermediate words in a list of words and what happens when there is no match.
+2. create interface to decouple dictionary functionality, namely reading file, searching and writing the result.
+3. create a word enumerator class which implements any necessary interfaces and provides search and compare functionality.
+4. identify and understand what the user input could be like, if not any allow start and end word to be passed as cmd parameters. 
+5. unit test / end to end testing of application.
+6. refactor where necessary.
+
+* it should check that the user has specified words as input
+* it should check that the dictionary file is loaded and available in memory
+* it should check that the start word exists in the dictionary file
+* it should enumerate through the dictionary file for intermediate words between start and end word
+* it should deal with any exceptions
+* it should sort the results list
+* it should return an empty list if there is no matches.
+* it should write a results list to a text file
+* it should allow dictionary path to been changed without modifying the code base (app config)
+* it should maybe account for internationalisation (i18n)
+
+"Basic Flow"
+start:
+request start word :- request end word --> 
+	load dictionary file into memory--> 
+		check word actually exists in the data and is valid -->
+			 search and compare dictionary file for intermediate words --> 
+		is successful ?
+		--> write result to file.
+		is unsuccessful !
+		--> notify user and end process.
+		exception occurred ?
+		--> notify user and end process.
+end.
+
+"Performance"
+initial thought was to load dictionary from file and store in a collection such as a list, as we are only dealing with 4 letter words I
+decided to only load words with said length from file into the dictionary list so there is no great concern over anything greater with a length of 4.
+For performance reasons it would be easier to read line by line and not actually host the list in memory (process it on the fly) and just
+generate and hold the results list until written out to a text file.  Taking into account the possible size of some dictionaries 
+I suspect using arrays instead of generic lists would also increase performance going forward with this application.

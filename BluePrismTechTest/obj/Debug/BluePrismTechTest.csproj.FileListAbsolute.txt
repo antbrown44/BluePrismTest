@@ -1,0 +1,9 @@
+C:\Users\anthony\Desktop\BluePrismTechTest_AnthonyJBrown\BluePrismTechTest\BluePrismTechTest\bin\Debug\BluePrismTechTest.exe.config
+C:\Users\anthony\Desktop\BluePrismTechTest_AnthonyJBrown\BluePrismTechTest\BluePrismTechTest\bin\Debug\BluePrismTechTest.exe
+C:\Users\anthony\Desktop\BluePrismTechTest_AnthonyJBrown\BluePrismTechTest\BluePrismTechTest\bin\Debug\BluePrismTechTest.pdb
+C:\Users\anthony\Desktop\BluePrismTechTest_AnthonyJBrown\BluePrismTechTest\BluePrismTechTest\obj\Debug\BluePrismTechTest.csproj.CoreCompileInputs.cache
+C:\Users\anthony\Desktop\BluePrismTechTest_AnthonyJBrown\BluePrismTechTest\BluePrismTechTest\obj\Debug\BluePrismTechTest.exe
+C:\Users\anthony\Desktop\BluePrismTechTest_AnthonyJBrown\BluePrismTechTest\BluePrismTechTest\obj\Debug\BluePrismTechTest.pdb
+C:\Users\anthony\Desktop\BluePrismTechTest_AnthonyJBrown\BluePrismTechTest\BluePrismTechTest\obj\Debug\BluePrismTechTest.csproj.GenerateResource.cache
+C:\Users\anthony\Desktop\BluePrismTechTest_AnthonyJBrown\BluePrismTechTest\BluePrismTechTest\obj\Debug\BluePrismTechTest.i18n.resources
+C:\Users\anthony\Desktop\BluePrismTechTest_AnthonyJBrown\BluePrismTechTest\BluePrismTechTest\obj\Debug\BluePrismTechTest.csprojAssemblyReference.cache
